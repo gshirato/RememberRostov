@@ -10,7 +10,9 @@ public class CSVWriter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fileInfo = new FileInfo(Application.dataPath + "/Resources/Rostov.csv");
+        System.DateTime dateTime = System.DateTime.Now;
+        string date = dateTime.ToString("yyyyMMdd-HHmmss");
+        fileInfo = new FileInfo(Application.dataPath + "/Resources/Rostov-"+ date+".csv");
         streamWriter = fileInfo.CreateText();
 
         streamWriter.WriteLine("Time,Side,Number,X,Y");
