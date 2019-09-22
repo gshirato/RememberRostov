@@ -32,6 +32,9 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+*.png
+*.jpg
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -46,3 +49,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+# .ipynb_checkpoints
+.ipynb_checkpoints
